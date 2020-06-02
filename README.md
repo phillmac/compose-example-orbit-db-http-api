@@ -18,3 +18,8 @@ docker-compose up -d
 docker-compose exec certbot sh run.sh
 docker-compose restart reverse-proxy
 ```
+
+### Disabling proxy for specific domain ###
+
+ - To disable the nginx reverse-proxy for a specific domain, remove its entry from `config/domains/list.txt`
+ - Run `docker-compose restart reverse-proxy`
