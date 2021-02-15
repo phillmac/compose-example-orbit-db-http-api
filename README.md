@@ -10,6 +10,8 @@ An example docker compose project for the orbit-db-http-api using certbot, nginx
  - **config/reverse-proxy/conf.d.available/api.orbitdb.domain.io.conf**
  
  **Rename all the** `config/reverse-proxy/conf.d.available/*.conf` **files to match the new domain name**
+ 
+ **Edit the** `NOTIFY_EMAIL` **env var in** `docker-compose.yml`
 
 ### How To Run ###
 
