@@ -6,6 +6,8 @@ services:
     restart: unless-stopped
     networks:
       - certbot
+    environment:
+      NOTIFY_EMAIL: 'info@example.com'
     volumes:
       - cert-data:/etc/letsencrypt
       - ./config/domains:/opt/certbot/domains/
